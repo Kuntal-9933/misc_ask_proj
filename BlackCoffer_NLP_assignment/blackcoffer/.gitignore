@@ -1,0 +1,7 @@
+__init__.py
+items.py
+middlewares.py
+pipelines.py
+settings.py
+scrapy.cfg
+
