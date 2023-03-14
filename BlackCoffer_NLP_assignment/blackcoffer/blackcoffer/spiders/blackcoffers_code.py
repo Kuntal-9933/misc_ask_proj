@@ -37,4 +37,3 @@ class scrap_data(scrapy.Spider):
         # np.savetxt(file,web_text,delimiter=' ')
         # shutil.move(src=(current_loc+"\\"+file),dst=(destination_loc+"\\"+file))
         
-        
