@@ -8,9 +8,6 @@ import numpy as np
 path="C:\\Users\\KUNTAL MUKHERJEE\\Downloads\\Input.xlsx"
 url,url_id=create_url(path)
 
-print(url)
-print("*********************************")
-print(url_id)
 class scrap_data(scrapy.Spider):
     name="blackcoffer_scrap"
     def start_requests(self):
