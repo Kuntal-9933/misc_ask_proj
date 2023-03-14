@@ -6,6 +6,17 @@ import numpy as np
 
 
 path="C:\\Users\\KUNTAL MUKHERJEE\\Downloads\\Input.xlsx"
+import pandas as pd
+import numpy as np
+current_loc="F:\MISC_Projects_ASK\BlackCoffer_NLP_assignment\blackcoffer"
+destination_loc="F:\MISC_Projects_ASK\BlackCoffer_NLP_assignment\blackcoffer\data_folder"
+
+def create_url(dataset_path):
+    df=pd.read_excel(dataset_path)
+    lst_url = df['URL'].values
+    lst_id = df['URL_ID'].values
+    return lst_url,lst_id
+
 url,url_id=create_url(path)
 
 class scrap_data(scrapy.Spider):
@@ -25,5 +36,4 @@ class scrap_data(scrapy.Spider):
         # file=f"{file_name}.txt"
         # np.savetxt(file,web_text,delimiter=' ')
         # shutil.move(src=(current_loc+"\\"+file),dst=(destination_loc+"\\"+file))
-        
         
