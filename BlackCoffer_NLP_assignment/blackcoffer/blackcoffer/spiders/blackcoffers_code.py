@@ -10,8 +10,10 @@ url,url_id=create_url(path)
 
 class scrap_data(scrapy.Spider):
     name="blackcoffer_scrap"
-    start_urls=[]
+    start_urls=list(url)
 
     def parse(self,response):
-        pass
+        url=response.request.url
+        print(url)
+        
         
