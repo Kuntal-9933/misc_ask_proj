@@ -1,1 +1,6 @@
 _pycache_
+__init__.py
+items.py
+middlewares.py
+pipelines.py
+scrapy.cfg
