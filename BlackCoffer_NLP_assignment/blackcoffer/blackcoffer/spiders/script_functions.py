@@ -9,6 +9,3 @@ def create_url(dataset_path):
 
 def SaveData():
     pass
-
-def XYZ():
-    pass
